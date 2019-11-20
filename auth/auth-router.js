@@ -7,7 +7,7 @@ const generateToken = require("./generateToken");
 const checkIfUserExists = require("../middleware/checkIfUserExists-middleware");
 
 // POST - Register a user
-router.post("/register", checkIfUserExists, (req, res) => {
+router.post("/registration", checkIfUserExists, (req, res) => {
     const user = req.body;
     const validationResult = validateUser(user, req.path);
     

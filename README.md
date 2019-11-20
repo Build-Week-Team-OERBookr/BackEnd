@@ -2,7 +2,7 @@
 
 ## Welcome
 
-Find the production server at: https://oerbookr.herokuapp.com/
+Find the production server at: https://oerbookr.herokuapp.com
 
 ## Tables
 
@@ -46,8 +46,8 @@ Example Requirements:
 |  get        |  /api/books/       |   -      | 
 |  get by Id  |   /api/books/:id   |   id       |     
 |     post    | /api/books/        |  title, authors, publisher, license, description, image, avg_rating     |   
-|     put     | api/books/:id |       **still working on**     | 
-|   delete    | api/book/:id       |    id        |     
+|     put     | /api/books/:id |       **still working on**     | 
+|   delete    | /api/books/:id      |    id        |     
 
 
 Example Requirements:

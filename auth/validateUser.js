@@ -5,11 +5,11 @@ module.exports = (user, path) => {
         errors.push('A username must be 4 or more characters long.')
     }
 
-    if (!user.password || user.password.length < 8) {
+    if (!user.password || user.password.length < 5) {
         errors.push('A password must be 8 or more characters long.')
     }
 
-    if (path === "/register") {
+    if (path === "/registration") {
         // Any input values specific to registration go here
     }
 
