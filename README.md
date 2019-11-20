@@ -14,9 +14,9 @@ Find the production server at: https://oerbookr.herokuapp.com/
 |  password     | str           |    yes        |               |               |
 
 
-###Routes
+### Routes
 
-#####post:/api/auth/registration </br>
+##### post:/api/auth/registration </br>
 Registers a new user </br>
 Example Requirements:
 ```
@@ -26,10 +26,10 @@ Example Requirements:
 }
 ```
 
-#####get:/api/users </br>
+##### get:/api/users </br>
 Returns all users
 
-#####post:/api/auth/login </br>
+##### post:/api/auth/login </br>
 Login user
 Example Requirements:
 ```
