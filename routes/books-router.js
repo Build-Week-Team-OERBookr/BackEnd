@@ -61,7 +61,7 @@ router.put('/:id', (req, res) => {
     const { id } = req.params;
     const changes = req.body;
 
-    Books.update(changes, id)
+    Books.updateBook(changes, id)
             .then(book => {
                 res.status(200).json(book)
             })

@@ -1,11 +1,11 @@
-const db = require("../database/db-config.js");
+const db = require("../database/db-config");
 
 module.exports = {
     get,
     getById,
     add,
-    updateBooks,
-    removeBooks,
+    updateBook,
+    remove,
 }
 
 function get() {
@@ -24,18 +24,18 @@ function add(book) {
     return db("books")
     .insert(book, "id")
     .then(ids => {
-        return findById(ids[0]);
+        return getById(ids[0]);
     });
 }
 
-function updateBooks(id, changes) {
+function updateBook(id, changes) {
     return db("books")
         .where({ id })
         .update(changes)
-        .then(_ => findById(id))
+        .then(_ => getById(id))
 }
 
-function removeBooks(id) {
+function remove(id) {
     return db("books")
         .where('id', id)
         .del();
