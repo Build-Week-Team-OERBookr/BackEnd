@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-// const restricted = require("../middleware/restricted-middleware");
+// const restricted = require("../middleware/restricted-6");
 
 const authRouter = require("../auth/auth-router");
 const usersRouter  = require('../routes/user-router.js');

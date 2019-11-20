@@ -6,7 +6,6 @@ const validateUser = require("./validateUser");
 const generateToken = require("./generateToken");
 const checkIfUserExists = require("../middleware/checkIfUserExists-middleware");
 
-// POST - Register a user
 router.post("/registration", checkIfUserExists, (req, res) => {
     const user = req.body;
     const validationResult = validateUser(user, req.path);
@@ -27,7 +26,6 @@ router.post("/registration", checkIfUserExists, (req, res) => {
     };
 });
 
-// POST - Login a user
 router.post("/login", (req, res) => {
     const { username, password } = req.body;
     const validationResult = validateUser(req.body, req.path);
