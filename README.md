@@ -43,11 +43,11 @@ Example Requirements:
 ### Books
 | Column        |     Endpoint      |    Requires  |
 | ------------- | ------------- | ------------- | 
-|  get        |  /api/books/       |   -      | 
-|  get by Id  |   /api/books/:id   |   id       |     
-|     post    | /api/books/        |  title, authors, publisher, license, description, image, avg_rating     |   
-|     put     | /api/books/:id |       **still working on**     | 
-|   delete    | /api/books/:id      |    id        |     
+|  **get**        |  /api/books/       |   -      | 
+|  **get by Id**  |   /api/books/:id   |   id       |     
+|     **post**    | /api/books/        |  title, authors, publisher, license, description, image, avg_rating     |   
+|     **put**     | /api/books/:id |       anyone of these: title, authors, publisher, license, description, image, avg_rating    | 
+|   **delete**    | /api/books/:id      |    id        |     
 
 
 Example Requirements:
