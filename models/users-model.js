@@ -4,17 +4,18 @@ module.exports = {
     get,
     getById,
     getByUsername,
-    add
-};
+    add,
+    // authUser,
+}; 
 
 function get() {
     return db('users')
-        .select('id', 'username');
+        .select('id', 'username', 'password');
 };
 
 function getById(id) {
     return db('users')
-        .select('id', 'username')
+        .select('id', 'username', 'password')
         .where({ id })
         .first();
 };
@@ -30,3 +31,9 @@ function add(user) {
         .insert(user, 'id')
         .then(([id]) => getById(id));
 };
+
+// function authUser(condition) {
+//     return db('users')
+//         .where(condition)
+//         .first();
+// }

@@ -8,7 +8,7 @@ const checkIfUserExists = require("../middleware/checkIfUserExists-middleware");
 
 router.post("/registration", checkIfUserExists, (req, res) => {
     const user = req.body;
-    const validationResult = validateUser(user, req.path);
+    const validationResult = validateUser(user, req.path); 
     
     if (validationResult.isSuccessful) {
         const token = generateToken(user);
@@ -35,7 +35,7 @@ router.post("/login", (req, res) => {
         .then(user => {
             if (user && bcrypt.compareSync(password, user.password)) {
                 const token = generateToken(user);
-                res.status(200).json({ message: "Welcome ${user.name}!", token });                
+                res.status(200).json({ message: `Welcome ${user.username}!`, token });                
             } else if (user) {
                 res.status(400).json({ message: "Username and password do not match." });
             } else {

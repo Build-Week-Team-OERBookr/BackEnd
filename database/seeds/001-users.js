@@ -9,18 +9,11 @@ exports.seed = function(knex) {
           "username": "test",
           "password": "testing123",
         },
-        {
-          "username": "ndawi",
-          "password": "boredlately",
-        },
-        {
-          "username": "Kenneth",
-          "password": "kenny2.0",
-        },
-        {
-          "username": "admin",
-          "password": "admin",
-        }
+
+        // {
+        //   "username": "admin",
+        //   "password": "admin",
+        // }
       ]);
     });
 };

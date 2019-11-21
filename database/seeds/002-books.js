@@ -59,7 +59,7 @@ exports.seed = function(knex) {
         author: `Ron Larson`,
         publisher: 'Cengage Learning',
         license: ' Creative Commons Attribution-ShareAlike 4.0 International License',
-        description: "Larson IS student success. ELEMENTARY ALGEBRA owes its success to the hallmark features for which the Larson team is known: learning by example, a straightforward and accessible writing style, emphasis on visualization through the use of graphs to reinforce algebraic and numeric solutions and to interpret data, and comprehensive exercise sets.",
+        description: "ELEMENTARY ALGEBRA owes its success to the hallmark features for which the Larson team is known: learning by example, a straightforward and accessible writing style, emphasis on visualization through the use of graphs to reinforce algebraic and numeric solutions and to interpret data, and comprehensive exercise sets.",
         avg_rating: 4,
         image: 'http://books.google.com/books/content?id=U6v78M5nYKAC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE71ayZKq-oQ9bHy_7OkzfH-CbGMshXSU6Dfb-NthWEmp49mxkgWGeLredX8OgL9zYhcCenHsxAunjaWPCAozBLN8qqFiJ47k_efigy2WR6S13wYP4KC43NUJhCk8sLi8mXOuq3GI&source=gbs_api',
     },

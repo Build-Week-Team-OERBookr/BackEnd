@@ -32,7 +32,7 @@ function updateBook(id, changes) {
     return db("books")
         .where({ id })
         .update(changes)
-        .then(_ => getById(id))
+        // .then(_ => getById(id))
 }
 
 function remove(id) {
