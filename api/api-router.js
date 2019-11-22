@@ -8,8 +8,7 @@ const bookRouter  = require('../routes/books-router.js');
 
 
 router.use('/auth', authRouter);
-router.use('/users', usersRouter);
 router.use("/users", restricted, usersRouter);
-router.use('/books', bookRouter);
+router.use('/books', restricted, bookRouter);
 
 module.exports = router;
