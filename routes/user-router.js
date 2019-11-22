@@ -4,9 +4,9 @@ const db = require('../database/db-config.js');
 
 const router = express.Router();
 const Users = require("../models/users-model");
- 
- // get list of users
- router.get('/', (req, res) => {
+const restricted = require("../auth/restricted");
+
+ router.get('/', restricted, (req, res) => {
     db('users')
     .then(users => {
       users = users.map(user => {

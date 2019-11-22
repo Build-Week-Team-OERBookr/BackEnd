@@ -2,8 +2,9 @@ const router = require('express').Router();
 const db = require('../database/db-config.js');
 
 const Books = require('../models/books-model');
+const restricted = require("../auth/restricted");
 
-router.get('/', (req, res) => {
+router.get('/', restricted, (req, res) => {
     Books.get()
         .then(books => {
             res.status(200).json(books)
