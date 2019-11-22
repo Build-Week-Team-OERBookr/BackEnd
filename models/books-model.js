@@ -20,6 +20,13 @@ function getById(id) {
 }
 
 
+// function add(book) {
+//     return db("books")
+//     .insert(book, "id")
+//     .then(ids => {
+//         return getById(ids[0]);
+//     });
+// }
 function add(book) {
     return db("books")
     .insert(book, "id")
@@ -27,7 +34,6 @@ function add(book) {
         return getById(ids[0]);
     });
 }
-
 function updateBook(id, changes) {
     return db("books")
         .where({ id })
